@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body{
+    background-color: black;
+}
+
+p{
+    color: white;
+}
+
+/* HEADER */
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.maintitle{
+    width: 300px;
+    height: 200px;
+}
+/* NAV */
+nav{
+    width: fit-content;
+    display: flex;
+}
+
+.menuicon{
+    width: 50px;
+    position: fixed;
+}
+
+.navcontainer{
+    display: none;
+    position: fixed;
+    margin-left: 51px;
+}
+
+.active{
+    display: block;
+}
+
+.navrow{
+    display: flex;
+    color: white;
+    background-color: rgb(53, 53, 53);
+    text-align: center;
+    padding: 5px;
+}
+
+nav p{
+    font-size: 1.2em;
+}
+
+.navrow>div{
+    margin-left: 5px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.navrow>div:hover{
+    background-color: black;
+}
+
+.portrait{
+    width: 100px;
+    height: 100px;
+}
+
+/* MAIN */
+
+section{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.sectiontitle{
+    color: white;
+    font-size: 2.5em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.inibody{
+    display: flex;
+}
+
+.list{
+    color: white;
+    font-size: 1.2em;
+}
+
+.filmsdiv{
+    width: 50%;
+}
+
+.booksdiv{
+    width: 50%;
+}
+
+.filmsdivheader{
+    height: 200px;
+    background-image: url(res/filmsimg.png);
+    background-size: cover;
+}
+
+
+.booksdivheader{
+    height: 200px;
+    background-image: url(res/booksimg.png);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.iniimage{
+    width: 100%;
+}
+
+
+
+/* FOOTER */
+footer{
+    width: 100%;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img{
+    width: 60px;
+}
