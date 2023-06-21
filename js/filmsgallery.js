@@ -48,37 +48,38 @@ const films = [{
     title: "Sin tiempo para morir", year: 2021, actor: "Daniel Craig", src: "res/films/tiempo.jpg"
 }]
 
-const img = document.getElementById('filmimg');
-const text = document.getElementById('filmtitle');
-const next = document.getElementById('btn_next');
-const previous = document.getElementById('btn_prev');
+const img = document.getElementById('filmimg')
+const text = document.getElementById('filmtitle')
+const next = document.getElementById('btn_next')
+const previous = document.getElementById('btn_prev')
 
-let currentIndex = 0;
-let intervalId = null;
+let currentIndex = 0
+let intervalId = null
+displayFilm(currentIndex)
 
 function displayFilm(index) {
-  img.src = films[index].src;
-  text.innerHTML = films[index].title + " (" + films[index].year + ") " + films[index].actor;
+  img.src = films[index].src
+  text.innerHTML = films[index].title + " (" + films[index].year + ") " + films[index].actor
 }
 
 function nextFilm() {
   currentIndex = (currentIndex + 1) % films.length;
-  displayFilm(currentIndex);
+  displayFilm(currentIndex)
 }
 
 function prevFilm() {
   currentIndex = (currentIndex - 1 + films.length) % films.length;
-  displayFilm(currentIndex);
+  displayFilm(currentIndex)
 }
 
 next.addEventListener('click', function() {
-  clearInterval(intervalId); // Reinicia el temporizador
-  nextFilm();
+  clearInterval(intervalId)
+  nextFilm()
 });
 
 previous.addEventListener('click', function() {
-  clearInterval(intervalId); // Reinicia el temporizador
-  prevFilm();
+  clearInterval(intervalId)
+  prevFilm()
 });
 
-intervalId = setInterval(nextFilm, 3000); // Ejecuta automáticamente nextFilm cada 2 segundos
+intervalId = setInterval(nextFilm, 3000)

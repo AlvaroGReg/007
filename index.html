@@ -14,17 +14,11 @@
 	</head>
 	<body>
 		<!-- HEADER -->
-		<header>
-			<img
-				class="maintitle"
-				src="res/web/007.png"
-				alt="007 letters"
-			/>
-		</header>
+		<header></header>
 		<!-- NAV -->
 		<nav>
 			<img
-				src="res/web/menuicon.png"
+				src="res/web/togglemenu.png"
 				alt="Menu icon"
 				onclick="openMenu()"
 				class="menuicon"
@@ -33,136 +27,112 @@
 				class="navcontainer"
 				id="navcontainer"
 			>
-				<div class="navrow">
-					<div class="divhome">
-						<a href="#ini">
-							<img
-								class="portrait"
-								src="res/web/007.png"
-								alt="007 letters"
-							/>
-							<p>Inicio</p></a
-						>
-					</div>
-					<div class="divauthor">
-						<a href="#author">
-							<img
-								class="portrait"
-								src="res/portraits/author.avif"
-								alt="007 Author"
-							/>
-							<p>Autor</p></a
-						>
-					</div>
+				<div class="navitem">
+					<a href="#films">
+						<img
+							class="portrait"
+							src="res/web/007.png"
+							alt="007 letters"
+						/>
+						<p>Inicio</p></a
+					>
 				</div>
-				<div class="navrow">
-					<div class="divcharacter">
-						<a href="#character">
-							<img
-								class="portrait"
-								src="res/web/007img.png"
-								alt="Image of 007"
-							/>
-							<p>Personaje</p></a
-						>
-					</div>
-					<div class="divconnery">
-						<a href="#connery">
-							<img
-								class="portrait"
-								src="res/portraits/connery.jpg"
-								alt="Sean Connery"
-							/>
-							<p>Sean Connery</p></a
-						>
-					</div>
+				<div class="navitem">
+					<a href="#author">
+						<img
+							class="portrait"
+							src="res/portraits/author.avif"
+							alt="007 Author"
+						/>
+						<p>Autor</p></a
+					>
 				</div>
-				<div class="navrow">
-					<div class="divmoore">
-						<a href="#moore">
-							<img
-								class="portrait"
-								src="res/portraits/moore.jpg"
-								alt="Roger Moore"
-							/>
-							<p>Roger Moore</p></a
-						>
-					</div>
-					<div class="divdalton">
-						<a href="#dalton">
-							<img
-								class="portrait"
-								src="res/portraits/dalton.jpg"
-								alt="Timoty Dalton"
-							/>
-							<p>Timoty Dalton</p></a
-						>
-					</div>
+				<div class="navitem">
+					<a href="#connery">
+						<img
+							class="portrait"
+							src="res/portraits/connery.jpg"
+							alt="Sean Connery"
+						/>
+						<p>Sean Connery</p></a
+					>
 				</div>
-				<div class="navrow">
-					<div class="divbrosman">
-						<a href="#brosnan">
-							<img
-								class="portrait"
-								src="res/portraits/brosnan.jpg"
-								alt="Pierce Brosnan"
-							/>
-							<p>Pierce Brosnan</p></a
-						>
-					</div>
-					<div class="divcraig">
-						<a href="#craig">
-							<img
-								class="portrait"
-								src="res/portraits/craig.jpg"
-								alt="Daniel Craig"
-							/>
-							<p>Daniel Craig</p></a
-						>
-					</div>
+				<div class="navitem">
+					<a href="#moore">
+						<img
+							class="portrait"
+							src="res/portraits/moore.jpg"
+							alt="Roger Moore"
+						/>
+						<p>Roger Moore</p></a
+					>
+				</div>
+				<div class="navitem">
+					<a href="#dalton">
+						<img
+							class="portrait"
+							src="res/portraits/dalton.jpg"
+							alt="Timoty Dalton"
+						/>
+						<p>Timoty Dalton</p></a
+					>
+				</div>
+				<div class="navitem">
+					<a href="#brosnan">
+						<img
+							class="portrait"
+							src="res/portraits/brosnan.jpg"
+							alt="Pierce Brosnan"
+						/>
+						<p>Pierce Brosnan</p></a
+					>
+				</div>
+				<div class="navitem">
+					<a href="#craig">
+						<img
+							class="portrait"
+							src="res/portraits/craig.jpg"
+							alt="Daniel Craig"
+						/>
+						<p>Daniel Craig</p></a
+					>
 				</div>
 			</div>
 		</nav>
 
 		<!-- MAIN -->
 		<main>
+			<section class="front"></section>
 			<!-- INI -->
 			<section
-				class="ini"
-				id="ini"
+				class="films"
+				id="films"
 			>
-        
-                <h1 class="sectiontitle">SAGA 007</h1>
-                <div class="inibody">
-
-                <div class="filmsdiv">
-                    <div class="filmsdivheader"></div>
-
-                    <div class="filmsgallery" id="gilmsgallery">
-                        <p id="btn_prev"><</p>
-                        <p id="btn_next">></p>
-                        <img src="" alt="" id="filmimg">
-                        <p id="filmtitle"></p>
-                    </div>
-                </div>
-                <div class="booksdiv">
-                    <div class="booksdivheader"></div>
-                    <ul class="list">
-                        <li>Casino Royale 1953</li>
-                        <li>Vive y deja morir 1954</li>
-                        <li>Moonraker	1955</li>
-                        <li>Diamantes para la eternidad	1956</li>
-                        <li>Desde Rusia con amor	1957</li>
-                        <li>Dr. No	1958</li>
-                        <li>Goldfinger	1959</li>
-                        <li>Operación Trueno	1961</li>
-                        <li>El espía que me amó	1962</li>
-                        <li>Al servicio secreto de su Majestad	1963</li>
-                        <li>Sólo se vive dos veces	1964</li>
-                        <li>El hombre de la pistola de oro	1965</li>
-                    </ul>
-                </div></div>
-            </section>
+				<div
+					class="filmsgallery"
+					id="filmsgallery"
+				>
+					<img
+						src="res/web/arrow-prev.png"
+						class="arrow prev"
+						id="btn_prev"
+						alt="Gun left"
+					/>
+					<img
+						src="res/web/arrrow-next.png"
+						id="btn_next"
+						class="arrow next"
+						alt="Gun right"
+					/>
+					<img
+						src=""
+						alt=""
+						id="filmimg"
+						class="filmimg"
+					/>
+					<p id="filmtitle"></p>
+				</div>
+			</section>
 			<!-- AUTHOR -->
 			<section
 				class="author"
@@ -209,5 +179,5 @@
 		</footer>
 	</body>
 	<script src="js/main.js"></script>
-    <script src="js/filmsgallery.js"></script>
+	<script src="js/filmsgallery.js"></script>
 </html>

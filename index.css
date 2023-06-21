@@ -6,11 +6,11 @@
 }
 
 body{
-    background-color: black;
+    background-color: rgb(171, 171, 171);
 }
 
 p{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 /* HEADER */
@@ -29,57 +29,72 @@ header{
 nav{
     width: fit-content;
     display: flex;
+    z-index: 100;
 }
 
 .menuicon{
-    width: 50px;
+    width: 80px;
+    margin-left: 20px;
+    margin-top: 20px;
     position: fixed;
+    transition: all 500ms;
+    cursor: pointer;
+}
+
+.menuicon:hover{
+    scale: 1.2;
 }
 
 .navcontainer{
     display: none;
     position: fixed;
-    margin-left: 51px;
+    margin-left: 120px;
 }
 
 .active{
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.navrow{
+.navitem{
     display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
-    background-color: rgb(53, 53, 53);
+    width: 120px;
     text-align: center;
     padding: 5px;
 }
 
 nav p{
     font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0.171);
+    color: white;
 }
 
-.navrow>div{
-    margin-left: 5px;
-    cursor: pointer;
-    padding: 5px;
-}
-
-.navrow>div:hover{
-    background-color: black;
+.navitem:hover{
+    background-color: rgba(255, 255, 255, 0.234);
 }
 
 .portrait{
     width: 100px;
     height: 100px;
+    border-radius: 50px;
+    background-image: url(res/web/007.png);
+    background-position: center;
 }
 
 /* MAIN */
 
+
 section{
-    width: 80%;
-    margin: 0 auto;
     margin-bottom: 50px;
-    padding: 20px;
+}
+
+.front{
+    height: 100vh;
+    background-image: url(res/web/background.jpg);
+    background-position: center;
 }
 
 .sectiontitle{
@@ -89,41 +104,77 @@ section{
     text-align: center;
 }
 
-.inibody{
+/* ACTORS GALLERY */
+
+.filmsgallery{
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+    width: 80%;
+    max-width: 700px;
+    min-width: 300px;
+    overflow: hidden;
+    height: 80vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.list{
-    color: white;
-    font-size: 1.2em;
+.filmimg{
+    height: 90%;
+    margin: auto;
 }
 
-.filmsdiv{
-    width: 50%;
+.filmsgallery p{
+    font-size: 1.4em;
 }
 
-.booksdiv{
-    width: 50%;
+.arrow{
+    position: absolute;
+    top: 35vh;
+    width: 50px;
+    margin: 4px;
+    transition: 800ms;
+    cursor: pointer;
 }
 
-.filmsdivheader{
-    height: 200px;
-    background-image: url(res/filmsimg.png);
-    background-size: cover;
+.arrow:hover{
+    scale: 1.2;
 }
 
-
-.booksdivheader{
-    height: 200px;
-    background-image: url(res/booksimg.png);
-    background-size: cover;
-    background-position: bottom;
+.next:active{
+    animation: nextrotation 400ms;
 }
 
-.iniimage{
-    width: 100%;
+.prev:active{
+    animation: prevrotation 400ms;
 }
 
+@keyframes nextrotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-40deg);
+    }
+  }
+
+  
+@keyframes prevrotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(40deg);
+    }
+  }
+
+.next{
+    right: 0;
+}
+.prev{
+    left: 0;
+}
 
 
 /* FOOTER */
