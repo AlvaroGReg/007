@@ -10,19 +10,12 @@ body {
 }
 
 @font-face {
-	font-family: "mainfont";
-	src: url(res/fonts/007Goldeneye-vnxD.ttf);
-}
-
-@font-face {
 	font-family: "titlefont";
 	src: url(res/fonts/Spectre007-KAdA.ttf);
 }
 
 p {
 	color: rgb(0, 0, 0);
-    
-	font-family: "mainfont";
 }
 
 /* HEADER */
