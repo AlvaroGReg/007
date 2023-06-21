@@ -76,7 +76,7 @@ nav {
 	align-items: center;
 	justify-content: center;
 	color: white;
-	width: 120px;
+	width: 140px;
 	text-align: center;
 	padding: 5px;
 	transition: 800ms;
@@ -94,8 +94,8 @@ nav p {
 }
 
 .portrait {
-	width: 100px;
-	height: 100px;
+	width: 120px;
+	height: 120px;
 	border-radius: 50px;
 	background-image: url(res/web/007.png);
 	background-position: center;
@@ -104,18 +104,23 @@ nav p {
 /* MAIN */
 
 section {
-	margin-bottom: 50px;
+	margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sectionbody{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     width: 90%;
 }
 
 .sectionbody img{
     width: 25%;
     height: auto;
+    border-radius: 25px;
 }
 
 
@@ -126,11 +131,20 @@ section {
 	margin: 0 auto;
 	text-align: center;
     font-family: "mainfont";
+    margin-bottom: 30px;
+}
+
+.flemingtxt p{
+    font-size: 1.2em;
+    margin: 20px;
+    padding: 20px;
+    text-align: justify;
 }
 
 iframe{
     height: 70vh;
     width: 70%;
+    border-radius: 5px;
 }
 
 /* ACTORS GALLERY */
@@ -216,3 +230,30 @@ footer {
 footer img {
 	width: 60px;
 }
+
+
+@media (max-width: 960px) {
+    .sectionbody{
+        flex-direction: column;
+    }
+
+    
+.sectionbody img{
+    width: 40%;
+    height: auto;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+iframe{
+    width: 90%;
+}
+
+p{
+    font-size: 1em;
+}
+
+.sectiontitle{
+    font-size: 1.8em;
+}
+  }
