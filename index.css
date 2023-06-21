@@ -15,12 +15,14 @@ body {
 }
 
 @font-face {
-	font-family: "italicfont";
-	src: url(res/fonts/QuantumItalic-Re0V.ttf);
+	font-family: "titlefont";
+	src: url(res/fonts/Spectre007-KAdA.ttf);
 }
 
 p {
 	color: rgb(0, 0, 0);
+    
+	font-family: "mainfont";
 }
 
 /* HEADER */
@@ -126,12 +128,14 @@ section {
 
 .sectiontitle {
 	color: rgb(0, 0, 0);
-	font-size: 4em;
+	font-size: 5em;
+    letter-spacing: 10px;
     font-weight: 400;
 	margin: 0 auto;
 	text-align: center;
-    font-family: "mainfont";
+    font-family: "titlefont";
     margin-bottom: 30px;
+    text-shadow: 5px 3px 2px grey;
 }
 
 .flemingtxt p{
@@ -222,9 +226,13 @@ iframe{
 footer {
 	width: 100%;
 	display: flex;
-	color: white;
 	align-items: center;
 	justify-content: center;
+}
+
+footer p{
+
+	color: white;
 }
 
 footer img {
@@ -232,6 +240,8 @@ footer img {
 }
 
 
+
+/* RESPONSIVE */
 @media (max-width: 960px) {
     .sectionbody{
         flex-direction: column;
