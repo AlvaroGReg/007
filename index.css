@@ -22,9 +22,10 @@ p {
 
 header {
 	height: 100vh;
-	width: 100vw;
+	width: 99vw;
 	background-image: url(res/web/background.jpg);
 	background-position: center;
+	background-repeat: no-repeat;
 	border-bottom: solid 1px black;
 }
 /* NAV */
@@ -91,18 +92,23 @@ nav p {
 .portrait {
 	width: 120px;
 	height: 120px;
-	border-radius: 50px;
+	border-radius: 60px;
 	background-image: url(res/web/007.png);
 	background-position: center;
 }
 
 /* MAIN */
 
+main{
+	margin: auto;
+}
+
 section {
-	margin-bottom: 100px;
+	min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+	margin-bottom: 100px;
 }
 
 .sectionbody{
@@ -221,11 +227,7 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-footer p{
-
-	color: white;
+	background-color: #a8a8a89e;
 }
 
 footer img {
